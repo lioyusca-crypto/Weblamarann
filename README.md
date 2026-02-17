@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Untuk Kamu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      width: 350px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff4d6d;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .yes {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    .no {
+      background: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Hai Kamu</h1>
+    <p>Aku cuma mau tahu satu hal...</p>
+
+    <form action="ISI_LINK_FORMSPREE_KAMU" method="POST">
+      <input type="text" name="nama" placeholder="Nama kamu" required>
+
+      <button type="submit" name="jawaban" value="Mau" class="yes">
+        Mau
+      </button>
+
+      <button type="submit" name="jawaban" value="Tidak" class="no">
+        Tidak
+      </button>
+    </form>
+
+  </div>
+
+</body>
+</html>
